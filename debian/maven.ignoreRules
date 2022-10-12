@@ -1,0 +1,9 @@
+* * test-jar * * *
+junit junit * * * *
+org.apache.maven.plugins maven-checkstyle-plugin * * * *
+org.apache.maven.plugins maven-pmd-plugin * * * *
+org.apache.maven.plugins maven-source-plugin * * * *
+org.apache.maven.plugins maven-surefire-report-plugin * * * *
+org.apache.maven.plugins maven-surefire-plugin * * * *
+org.codehaus.mojo cobertura-maven-plugin * * * *
+org.mockito mockito-all * * * *

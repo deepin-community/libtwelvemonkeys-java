@@ -1,0 +1,90 @@
+libtwelvemonkeys-java (3.7.0-1) UNRELEASED; urgency=medium
+
+  * update
+
+ -- Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>  Fri, 27 May 2022 16:16:31 +0800
+
+libtwelvemonkeys-java (3.7.0-1) unstable; urgency=medium
+
+  * New upstream version 3.7.0.
+  * Declare compliance with Debian Policy 4.6.0.
+
+ -- Markus Koschany <apo@debian.org>  Tue, 24 Aug 2021 00:58:08 +0200
+
+libtwelvemonkeys-java (3.6.3-1) unstable; urgency=medium
+
+  * New upstream version 3.6.3.
+
+ -- Markus Koschany <apo@debian.org>  Sun, 28 Feb 2021 20:56:18 +0100
+
+libtwelvemonkeys-java (3.6.2-1) unstable; urgency=medium
+
+  * New upstream version 3.6.2.
+
+ -- Markus Koschany <apo@debian.org>  Sun, 31 Jan 2021 01:29:34 +0100
+
+libtwelvemonkeys-java (3.6.1-1) unstable; urgency=medium
+
+  * New upstream version 3.6.1.
+  * Declare compliance with Debian Policy 4.5.1.
+
+ -- Markus Koschany <apo@debian.org>  Tue, 24 Nov 2020 00:45:16 +0100
+
+libtwelvemonkeys-java (3.6-1) unstable; urgency=medium
+
+  * New upstream version 3.6.
+  * Switch to debhelper-compat = 13.
+
+ -- Markus Koschany <apo@debian.org>  Tue, 14 Jul 2020 10:31:57 +0200
+
+libtwelvemonkeys-java (3.5-1) unstable; urgency=medium
+
+  * New upstream version 3.5.
+  * Declare compliance with Debian Policy 4.5.0.
+
+ -- Markus Koschany <apo@debian.org>  Sat, 01 Feb 2020 16:55:28 +0100
+
+libtwelvemonkeys-java (3.4.2-1) unstable; urgency=medium
+
+  * New upstream version 3.4.2.
+  * Switch to debhelper-compat = 12.
+  * Declare compliance with Debian Policy 4.4.0.
+
+ -- Markus Koschany <apo@debian.org>  Mon, 26 Aug 2019 20:55:43 +0200
+
+libtwelvemonkeys-java (3.4.1-1) unstable; urgency=medium
+
+  * New upstream version 3.4.1.
+
+ -- Markus Koschany <apo@debian.org>  Sun, 09 Sep 2018 21:12:22 +0200
+
+libtwelvemonkeys-java (3.4-1) unstable; urgency=medium
+
+  [ Geert Stappers ]
+  * Update VCS address fields.
+
+  [ Markus Koschany ]
+  * Switch to compat level 11.
+  * Declare compliance with Debian Policy 4.2.1.
+  * New upstream version 3.4.
+
+ -- Markus Koschany <apo@debian.org>  Sat, 01 Sep 2018 14:20:31 +0200
+
+libtwelvemonkeys-java (3.3.2-2) unstable; urgency=medium
+
+  * Drop use-local-jars.patch and build-depend on libtwelvemonkeys-java instead.
+  * Fix installation path of the documentation since we don't use a single
+    build directory anymore.
+  * Ignore maven-surefire-plugin.
+  * Build-depend on junit4 to prevent a FTBFS.
+    Temporary workaround for a bug outside the package.
+  * Ignore imageio-pdf and imageio-reference modules. They are currently
+    codeless.
+
+ -- Markus Koschany <apo@debian.org>  Fri, 21 Jul 2017 20:39:55 +0200
+
+libtwelvemonkeys-java (3.3.2-1) unstable; urgency=medium
+
+  * Initial release (Closes: #866099).
+
+ -- Markus Koschany <apo@debian.org>  Tue, 27 Jun 2017 13:20:31 +0200

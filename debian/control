@@ -1,0 +1,60 @@
+Source: libtwelvemonkeys-java
+Section: java
+Priority: optional
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Uploaders:
+ Markus Koschany <apo@debian.org>
+Build-Depends:
+ debhelper-compat (= 13),
+ default-jdk,
+ default-jdk-doc,
+ junit4,
+ maven-debian-helper (>= 2.1),
+ libcommons-fileupload-java,
+ libjmagick6-java,
+ libmaven-javadoc-plugin-java,
+ libservlet3.1-java,
+# libtwelvemonkeys-java
+Standards-Version: 4.6.0
+Vcs-Git: https://salsa.debian.org/java-team/libtwelvemonkeys-java.git
+Vcs-Browser: https://salsa.debian.org/java-team/libtwelvemonkeys-java
+Homepage: https://github.com/haraldk/TwelveMonkeys
+
+Package: libtwelvemonkeys-java
+Architecture: all
+Depends:
+ ${maven:Depends},
+ ${misc:Depends}
+Suggests:
+ libtwelvemonkeys-java-doc,
+ ${maven:OptionalDepends}
+Description: collection of plugins and extensions for Java's ImageIO
+ These plugins extend the number of image file formats supported in Java, using
+ the javax.imageio.* package. The main purpose of this project is to provide
+ support for formats not covered by the JRE itself.
+ .
+ Supported image formats (read and write support may vary):
+ BMP, JPEG, JPEG-2000, PNM, PSD, TIFF, HDR, IFF, PCX, PICT, SGI, TGA, ICNS, ICO
+ & CUR, Thumbs.db, SVG and WMF.
+
+Package: libtwelvemonkeys-java-doc
+Architecture: all
+Section: doc
+Depends:
+ ${misc:Depends}
+Recommends:
+ ${maven:DocDepends},
+ ${maven:DocOptionalDepends}
+Suggests:
+ libtwelvemonkeys-java
+Description: Documentation for libtwelvemonkeys-java
+ Twelvemonkeys is a collection of plugins and extensions for Java's ImageIO.
+ The main purpose of this project is to provide support for image file formats
+ not covered by the JRE itself.
+ .
+ Supported image formats (read and write support may vary):
+ BMP, JPEG, JPEG-2000, PNM, PSD, TIFF, HDR, IFF, PCX, PICT, SGI, TGA, ICNS, ICO
+ & CUR, Thumbs.db, SVG and WMF.
+ .
+ This package contains the API documentation of libtwelvemonkeys-java.
+

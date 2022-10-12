@@ -1,0 +1,38 @@
+From: Markus Koschany <apo@debian.org>
+Date: Mon, 26 Aug 2019 21:03:14 +0200
+Subject: servlet3.1
+
+Adapt to Debian's system servlet version.
+
+Forwarded: not-needed
+---
+ .../java/com/twelvemonkeys/servlet/OutputStreamAdapter.java   | 11 +++++++++++
+ 1 file changed, 11 insertions(+)
+
+diff --git a/servlet/src/main/java/com/twelvemonkeys/servlet/OutputStreamAdapter.java b/servlet/src/main/java/com/twelvemonkeys/servlet/OutputStreamAdapter.java
+index c287da0..d2dacd3 100755
+--- a/servlet/src/main/java/com/twelvemonkeys/servlet/OutputStreamAdapter.java
++++ b/servlet/src/main/java/com/twelvemonkeys/servlet/OutputStreamAdapter.java
+@@ -33,6 +33,7 @@ package com.twelvemonkeys.servlet;
+ import com.twelvemonkeys.lang.Validate;
+ 
+ import javax.servlet.ServletOutputStream;
++import javax.servlet.WriteListener;
+ import java.io.IOException;
+ import java.io.OutputStream;
+ 
+@@ -122,4 +123,14 @@ public class OutputStreamAdapter extends ServletOutputStream {
+     public void write(final byte pBytes[], final int pOff, final int pLen) throws IOException {
+         out.write(pBytes, pOff, pLen);
+     }
++
++    @Override
++    public void setWriteListener(WriteListener writeListener) {
++        throw new UnsupportedOperationException();
++    }
++
++    @Override
++    public boolean isReady() {
++        throw new UnsupportedOperationException();
++    }
+ }
